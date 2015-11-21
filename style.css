@@ -1,0 +1,72 @@
+
+body {
+  font-family: helvetica, sans-serif;
+  width:100%;
+  position: relative;
+}
+
+#flappyhead {
+  display:inline;
+  margin:0 auto;
+  z-index: 1;
+  position: absolute;
+  top:40%;
+  left:22%;
+  color: white;
+
+
+}
+
+h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#flappyhead:hover {
+
+
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#play-button {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  padding:25px;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  font-family: "helvetica";
+
+
+}
